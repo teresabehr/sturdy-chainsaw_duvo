@@ -1,0 +1,21 @@
+# Dependencies — rebuilt inside the image
+node_modules/
+
+# Credentials — never bake into the image; injected at run time
+.env
+*.env
+
+# Generated log files
+*.log
+fde.log
+buyer-audit.log
+
+# Git metadata
+.git/
+.gitignore
+
+# Development / test artifacts
+run-test.js
+
+# Documentation (optional — exclude to keep image minimal)
+*.md
